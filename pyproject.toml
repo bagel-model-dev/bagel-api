@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bagel-api"
+version = "0.1.0"
+description = "Python client for BAGEL-style unified image understanding, generation and editing through a hosted API on Synexa"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "bagel-model-dev"}]
+keywords = ["ai api", "bagel", "bagel api", "bagel python", "flux-kontext-pro", "gpt-image-2", "llava-13b", "synexa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/bagel-model-dev/bagel-api"
+Documentation = "https://bagel-model-dev.github.io/bagel-api/"
+"Hosted model" = "https://synexa.ai/explore/black-forest-labs/flux-kontext-pro"
+
+[tool.setuptools.packages.find]
+include = ["bagel_api*"]
